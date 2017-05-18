@@ -68,12 +68,14 @@ a
 	display: none
 
 
+
 .main-header
-	background-image: url("../img/green-background-wallpaper-5.png")
+	background-image: url("../img/s-dark4.jpg")
 	background-position: top center
 	min-height: 100vh
 	overflow: hidden
 	text-align: center
+	position: relative
 
 .mnu-line
 	padding-top: 48px
@@ -96,7 +98,7 @@ nav,
 
 .main-mnu
 	text-align: center
-	font-size: em(13)
+	font-size: 25px
 	> ul
 		> li
 			> a
@@ -106,10 +108,10 @@ nav,
 				+mt(0.5s)
 				cursor: pointer
 				&:hover
-					color: #414e5b
+					color: #fff
 			&:active
 				a
-					color: $accent
+					color: #000
 					text-decoration: underline
 
 
@@ -316,7 +318,7 @@ nav,
 		margin: 12px 0 0
 
 .s-gray 
-	background-color: #f8f8f8
+	background-color: #eaeaea
 
 .gallery-tizer-wrap
 	min-height: 360px
@@ -707,6 +709,14 @@ nav,
 			margin-right: 5px
 		i
 			font-size: 20px
+
+.carousel-eq
+	width: 50%
+	margin: auto
+
+.nameoffood
+	text-align: center
+	padding-top: 50px
 
 @import "media" // Всегда в конце
 
