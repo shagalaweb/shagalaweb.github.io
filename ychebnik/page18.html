@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Учебник</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+   <!--<div class="preloader">
+	   <div class="pulse"></div>
+   </div>-->
+
+	<div id="my-page">
+      <div id="my-header">
+		  <header class="site-header">
+			  <div class="top-line">
+				<h1>РАЗДЕЛ 1. ЛИНЕЙНАЯ АЛГЕБРА.</h1>
+				<a href="#my-menu" class="hamburger hamburger--emphatic">
+      				<span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					</span>
+      			</a>
+				
+				<nav id="my-menu">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="page1.html">Раздел 1. Линейная Алгебра</a></li>
+						<li><a href="page23.html">Раздел 2. Векторная Алгебра</a></li>
+						<li><a href="page36.html">Раздел 3. Аналитическая Геометрия</a></li>
+						<li><a href="pred3.html">Сожержание</a></li>
+					</ul>
+				</nav>
+			  </div>
+		  </header>
+	  </div>
+      <div id="my-content">
+		  <section class="s-dark s-page" style="background-image: url(img/header.jpg)">
+			  <div class="container">
+				  <div class="row">
+					  <div class="col-sm-12">
+					 	<div class="bg">
+							<h2 class="h2">7.	Решение системы  n-линейных уравнений с  n- неизвестными методом Гаусса</h2>
+							<p>
+								<span class="def">Алгоритм решения системы линейных уравнений методом Гаусса:</span>
+							</p>
+							<p>
+								ШАГ 1. Умножая первое уравнение на подходящие числа (а именно на <img src="img/form62.png" alt=""> и прибавляя полученные уравнения соответственно ко второму, третьему, …, n-му уравнению системы исключим переменную х1 из всех последующих уравнений, начиная со второго. Получим
+								<div class="text-center">
+									<img src="img/form63.png" alt="">
+								</div>
+							</p>
+							<p>
+								ШАГ 2. Умножая второе уравнение на подходящие числа и прибавляя полученные уравнение соответственно к третьему, четвертому,…, n-му уравнению, исключим переменную х2 из всех последующих уравнений, начиная с третьего процесс преобразования продолжается до тех пор пока система уравнении не примет следующий вид: 
+								<div class="text-center">
+									<img src="img/form64.png" alt="">
+								</div>
+							</p>
+							<p>
+								Для упрощения решения системы все вышеуказанные элементарные преобразования удобно проводить над соответствующей расширенной матрицей.
+							</p>
+							<p>
+								<span class="def">Определение.</span> Расширенной матрицей системы уравнений называется матрица, составленная из коэффициентов при неизвестных и столбца свободных членов.
+								<div class="text-center">
+									<img src="img/form65.png" alt="">
+								</div>
+							</p>
+							<p>
+								<span class="def">Привер : </span> Решить систему  методом Гаусса.
+								<div class="text-center">
+									<img src="img/form66.png" alt="">
+								</div>
+							</p>
+							<p>
+								Решение: Составим расширенную матрицу из коэффициентов и свободных членов системы. Начнем приводить матрицу к ступенчатому виду, используя метод Гаусса
+								<div class="text-center">
+									<img src="img/form67.png" alt="">
+								</div>
+							</p>
+							<p>
+								Первую строку умножим на (-2) и сложим со второй, затем первую строку на (-3) и сложим с третьей и умножим на (-2) и сложим с четвертой.
+								<div class="text-center">
+									<img src="img/form68.png" alt="">
+								</div>
+							</p>
+							<p>
+								Поменяем местами третью и вторую строку и вторую строку умножим на <img src="img/form69.png" alt=""> и сложим с четвертой строкой
+								Первую строку умножим на (-2) и сложим со второй, затем первую строку на (-3) и сложим с третьей и умножим на (-2) и сложим с четвертой.
+								<div class="text-center">
+									<img src="img/form70.png" alt="">
+								</div>
+							</p>
+							<p>
+								Этой матрице соответствует система треугольного вида:
+								<div class="text-center">
+									<img src="img/form71.png" alt="">
+								</div>
+							</p>
+							<p>
+								Начинаем обратный ход метода Гаусса. Найдем из четвертого уравнения 
+								<div class="text-center">
+									x <sub>4</sub> = -2
+								</div>
+							</p>
+							<p>
+								Подставляя x <sub>4</sub> = -2; <br>
+ 								из третьего: <img src="img/form72.png" alt=""> <br>
+								Также : x <sub>2</sub> = 2 , x <sub>1</sub> = 1
+							</p>
+							<p>
+								Ответ: x <sub>1</sub>(1: 2: -1: 2)
+								<div class="text-center">
+									<img src="img/form73.png" alt="">
+								</div>
+							</p>
+							<div class="page-next text-center">
+								<a href="page17.html" class="active">Предыдущая страница</a>
+								<a href="page19.html" class="active">Следующая страница</a>
+							</div>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+		  </section>
+	  </div>
+      <div id="my-footer"></div>
+   </div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+</body>
+</html>
